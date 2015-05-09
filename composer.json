@@ -1,0 +1,34 @@
+{
+  "name": "magento-hackathon/BigDataImport",
+  "license": "OSL-3.0",
+  "type": "magento-module",
+  "description": "BigDataImport for Magento",
+
+  "require": {
+    "php": ">=5.4.0",
+    "magento-hackathon/magento-composer-installer": "dev-master"
+  },
+
+  "require-dev": {
+    "magento/core": "1.9.1.0",
+    "ecomdev/mage-ci": "*",
+    "ecomdev/ecomdev_phpunit": "dev-dev"
+  },
+
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+  ],
+
+  "config": {
+    "bin-dir": "bin"
+  },
+
+  "extra": {
+    "magento-root-dir": "build",
+    "magento-force": true
+  }
+
+}
