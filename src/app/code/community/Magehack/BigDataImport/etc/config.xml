@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magehack_BigDataImport>
+            <version>0.1.0</version>
+        </Magehack_BigDataImport>
+    </modules>
+    <global>
+        <helpers>
+            <magehack_bigdataimport>
+                <class>Magehack_BigDataImport_Helper</class>
+            </magehack_bigdataimport>
+        </helpers>
+
+        <ho_import>
+            <magehack_bigdataimport_products>
+                <entity_type>catalog_product</entity_type>
+                <source model="ho_import/source_adapter_csv">
+                    <file>var/import/products.csv</file>
+                </source>
+
+                <import_options>
+                    <continue_after_errors>1</continue_after_errors>
+                </import_options>
+
+               <fieldmap>
+                    <sku field="sku" />
+                    <name field="name" />
+                    <price field="price" />
+                    <description field="description" />
+                    <_type field="type" />
+                    <_attribute_set value="Default" />
+                    <tax_class_id value="4" />
+                    <short_description field="description" />
+                </fieldmap>
+            </magehack_bigdataimport_products>
+        </ho_import>
+    </global>
+</config>

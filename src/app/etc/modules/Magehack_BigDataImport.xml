@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magehack_BigDataImport>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Magehack_BigDataImport>
+    </modules>
+</config>
