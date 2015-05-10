@@ -6,7 +6,9 @@
 
   "require": {
     "php": ">=5.4.0",
-    "magento-hackathon/magento-composer-installer": "dev-master"
+    "magento-hackathon/magento-composer-installer": "dev-master",
+    "ho-nl/ho_import": "dev-master",
+    "avstudnitz/fast-simple-import": "dev-develop"
   },
 
   "require-dev": {
@@ -14,8 +16,6 @@
     "ecomdev/ecomdev_phpunit": "dev-dev",
     "satooshi/php-coveralls": "dev-master",
     "phpunit/php-code-coverage": "2.0.15",
-    "ho-nl/ho_import": "dev-master",
-    "avstudnitz/fast-simple-import": "dev-develop",
     "phpunit/phpcov": "*"
   },
 
@@ -32,7 +32,8 @@
 
   "extra": {
     "magento-root-dir": "build",
-    "magento-force": true
+    "magento-force": true,
+    "auto-append-gitignore": true
   }
 
 }
