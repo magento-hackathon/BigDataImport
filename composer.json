@@ -31,7 +31,7 @@
   },
 
   "extra": {
-    "magento-root-dir": "build",
+    "magento-root-dir": "src",
     "magento-force": true,
     "auto-append-gitignore": true
   }

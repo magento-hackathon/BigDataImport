@@ -3,11 +3,11 @@
          colors="true"
          bootstrap="tests/bootstrap.php">
     <testsuite name="UnitTests">
-        <directory suffix=".php">tests/lib</directory>
+        <directory suffix=".php">tests</directory>
     </testsuite>
     <filter>
         <whitelist>
-            <directory suffix=".php">src/lib</directory>
+            <directory suffix=".php">app/code/community/Magehack/BigDataImport</directory>
         </whitelist>
     </filter>
     <php>
