@@ -14,6 +14,8 @@
     "ecomdev/ecomdev_phpunit": "dev-dev",
     "satooshi/php-coveralls": "dev-master",
     "phpunit/php-code-coverage": "2.0.15",
+    "ho-nl/ho_import": "dev-master",
+    "avstudnitz/fast-simple-import": "dev-develop",
     "phpunit/phpcov": "*"
   },
 
