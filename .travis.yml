@@ -1,0 +1,16 @@
+language: php
+php:
+  - 5.6
+env:
+  - MAGE=1.9.1.0
+before_script:
+  - MAGE_DIR=src
+  - composer self-update
+  - composer install -dev
+  - bin/mage-ci install $MAGE_DIR $MAGE magento -c
+script:
+  - bin/phpunit -c phpunit.xml --colors --coverage-php=build/var/phpunit/cov/01-unit.cov
+  - bin/mage-ci phpunit $MAGE_DIR --colors --coverage-php=var/phpunit/cov/02-$MAGE_DIR.cov
+after_script:
+  - bin/phpcov merge build/var/phpunit/cov --clover build/var/phpunit/coverage.xml
+  - bin/coveralls -v

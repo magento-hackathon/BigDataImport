@@ -10,9 +10,11 @@
   },
 
   "require-dev": {
-    "magento/core": "1.9.1.0",
     "ecomdev/mage-ci": "*",
-    "ecomdev/ecomdev_phpunit": "dev-dev"
+    "ecomdev/ecomdev_phpunit": "dev-dev",
+    "satooshi/php-coveralls": "dev-master",
+    "phpunit/php-code-coverage": "2.0.15",
+    "phpunit/phpcov": "*"
   },
 
   "repositories": [
